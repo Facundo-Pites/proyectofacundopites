@@ -1,0 +1,69 @@
+/* Header */
+.index-header, .index-header-zapatillas{
+  background-image: url(../img/botin-haland-2.webp);
+  @extend %paginas;
+ 
+}
+
+.index-header-remeras{
+  background-image: url(../img/jugadores-fondo-remeras.jpeg);
+ @extend %paginas;
+}
+
+
+
+
+
+.logotipo-estilo {
+  width: 5rem;
+  height: 5rem; 
+  object-fit: contain; 
+  opacity: 0.5 ;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.logotipo-estilo:hover{
+  opacity: 1;
+}
+
+.navbar .nav-link:hover {
+  color: #ff6600; 
+  
+}
+
+  /* .menu-navegacion ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu-navegacion ul li a {
+  text-decoration: none;
+  color: rgb(3, 0, 0);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-navegacion ul li a:hover {
+  color: #0044ff; 
+}  */
+
+.index-header button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffffcc;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.index-header button:hover {
+  background-color: #fff700;
+} 

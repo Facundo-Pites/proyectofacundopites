@@ -1,0 +1,22 @@
+/* Footer */
+.redes-logotipo {
+  background-color: beige;
+  text-align: center;
+  padding: 2rem;
+}
+
+.redes-logotipo img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.redes-logotipo img:hover {
+  transform: scale(1.1);
+}
+
+.seguinos {
+  margin-bottom: 1rem;
+}

@@ -1,78 +1,45 @@
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Acme', sans-serif;
+.index-header-remeras, .index-header, .index-header-zapatillas {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
 }
-
-
 
 /* Header */
-.index-header, .index-header-zapatillas{
+.index-header, .index-header-zapatillas {
   background-image: url(../img/botin-haland-2.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 2rem;
 }
 
-.index-header-remeras{
+.index-header-remeras {
   background-image: url(../img/jugadores-fondo-remeras.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 2rem;
-  
 }
-
-
-
-
 
 .logotipo-estilo {
-  width: 10rem;
-  height: 10rem; 
-  object-fit: contain; 
-  opacity: 0.5 ;
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  opacity: 0.5;
   transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 1rem;
 }
 
-.logotipo-estilo:hover{
+.logotipo-estilo:hover {
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
 .navbar .nav-link:hover {
-  color: #ff6600; 
-  
+  color: #ff6600;
 }
 
-  /* .menu-navegacion ul {
+/* .menu-navegacion ul {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -91,7 +58,6 @@
 .menu-navegacion ul li a:hover {
   color: #0044ff; 
 }  */
-
 .index-header button {
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
@@ -99,27 +65,23 @@
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #ffffffcc;
+  background-color: rgba(255, 255, 255, 0.8);
   color: black;
   transition: background-color 0.3s ease;
 }
 
 .index-header button:hover {
   background-color: #fff700;
-} 
+}
 
 /* Productos y estilos main*/
-
 .centrado {
   text-align: center;
 }
 
 main {
-  padding-top: 70px; 
+  padding-top: 70px;
 }
-
-
-
 
 .contenedor {
   display: flex;
@@ -127,7 +89,6 @@ main {
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  
 }
 
 .menu-compra {
@@ -137,7 +98,7 @@ main {
   padding: 15px;
   margin: 10px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: white;
   display: flex;
@@ -147,13 +108,13 @@ main {
 
 .menu-compra:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .menu-compra img {
   width: 100%;
   height: auto;
-  margin: 0
+  margin: 0;
 }
 
 .menu-compra h3 {
@@ -164,7 +125,7 @@ main {
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   border: none;
-  background-color: black;
+  background-color: #000000;
   color: white;
   cursor: pointer;
   border-radius: 5px;
@@ -176,14 +137,11 @@ main {
 }
 
 .carousel-remeras {
-  width: 100%;            
-  height: 60vh;           
-  object-fit: contain;      
-  background-color: #33333365;
-  
- 
+  width: 100%;
+  height: 60vh;
+  object-fit: contain;
+  background-color: #333;
 }
-
 
 /* Comentarios */
 #comentarios {
@@ -224,87 +182,11 @@ main {
   margin-bottom: 1rem;
 }
 
-/* ===== Tablets (pantallas hasta 900px) ===== */
-@media (max-width: 1200px) {
-  .contenedor {
-    gap: 1.5rem;
-    
-  }
-
-
-
-  
-
-  
-
-  .menu-compra {
-    width: 45%; /* dos productos por fila */
-  }
-
-  .menu-navegacion ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .index-header h1 {
-    font-size: 1.5rem;
-  }
-
-  
-
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Acme", sans-serif;
 }
 
-/* ===== Celulares (pantallas hasta 600px) ===== */
-@media (max-width: 600px) {
-  .menu-compra {
-    width: 90%; /* un producto por fila */
-  }
-
- 
-
-
-  .index-header {
-    padding: 1rem;
-    height: auto;
-  }
-
-  .index-header h1 {
-    font-size: 1.2rem;
-  }
-
-  .index-header button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    margin-top: 70px;
-  }
-
-  .menu-navegacion ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .menu-navegacion ul li a {
-    font-size: 1rem;
-  }
-
-  #mensaje {
-    width: 95%;
-  }
-
-  .logotipo-estilo {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  
-  
-}
-
-@media (max-width: 500px) {
-  .carousel-remeras {
-    height: 50vh;         
-    object-fit: cover;
-  }
-}
-
+/*# sourceMappingURL=style.css.map */
