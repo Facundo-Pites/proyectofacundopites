@@ -8,6 +8,7 @@
 .index-header-remeras{
   background-image: url(../img/jugadores-fondo-remeras.jpeg);
  @extend %paginas;
+ 
 }
 
 
@@ -53,17 +54,9 @@
 }  */
 
 .index-header button {
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  margin-top: 1rem;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffffcc;
-  color: black;
-  transition: background-color 0.3s ease;
+ @extend %index-header-paginas;
 }
 
-.index-header button:hover {
-  background-color: #fff700;
+.index-header   button:hover {
+  background-color: #13120d2c;
 } 

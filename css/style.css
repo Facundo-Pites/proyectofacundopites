@@ -9,8 +9,20 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: rgb(26, 3, 3);
   padding: 2rem;
+}
+
+.index-header button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transition: background-color 0.3s ease;
 }
 
 /* Header */
@@ -58,20 +70,8 @@
 .menu-navegacion ul li a:hover {
   color: #0044ff; 
 }  */
-.index-header button {
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  margin-top: 1rem;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
-  transition: background-color 0.3s ease;
-}
-
 .index-header button:hover {
-  background-color: #fff700;
+  background-color: rgba(19, 18, 13, 0.1725490196);
 }
 
 /* Productos y estilos main*/
