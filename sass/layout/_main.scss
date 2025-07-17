@@ -12,27 +12,19 @@ main {
 
 
 .contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
   padding: 2rem;
-  
+  @include flex-wrap-gap();
 }
 
 .menu-compra {
   width: 250px;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 10px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 10px;
+  @include tarjeta-contenido();
 }
 
 .menu-compra:hover {
@@ -52,13 +44,7 @@ main {
 
 .menu-compra button {
   margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: $backgroundColorBotones;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  @include boton-estilo();
 }
 
 .menu-compra button:hover {
@@ -89,4 +75,57 @@ main {
   border: 1px solid #ccc;
   resize: vertical;
   margin-top: 1rem;
+}
+/* Main del preguntas clientes*/
+
+#testimonios {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contenedor-flex {
+  margin-top: 20px;
+  @include flex-wrap-gap(20px, space-between);
+}
+
+.testimonial {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: left;
+  @include tarjeta-contenido();
+  padding: 20px;
+}
+
+#nosotros {
+  background-color: #fafafa;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+#ubicacion {
+  padding: 60px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#ubicacion h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#ubicacion p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.mapa {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

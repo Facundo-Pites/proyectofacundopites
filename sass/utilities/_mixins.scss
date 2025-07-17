@@ -1,0 +1,39 @@
+@mixin fondo-animado {
+  background-size: 400% 400%;
+  animation: gradientFlow 10s ease infinite;
+}
+
+@mixin logotipo-animado($tamano: 5rem, $opacidad: 0.5) {
+  width: $tamano;
+  height: $tamano;
+  object-fit: contain;
+  opacity: $opacidad;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+  animation: girar 6s linear infinite;
+}
+
+@mixin tarjeta-contenido($bg: white, $sombra: rgba(0, 0, 0, 0.1)) {
+  background-color: $bg;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px $sombra;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@mixin flex-wrap-gap($gap: 2rem, $justify: center) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin boton-estilo($bg: $backgroundColorBotones, $color: white) {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: $bg;
+  color: $color;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}

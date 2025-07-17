@@ -11,20 +11,26 @@
  
 }
 
+header {
+  @include fondo-animado;
+  color: white;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 
 
 
 .logotipo-estilo {
-  width: 5rem;
-  height: 5rem; 
-  object-fit: contain; 
-  opacity: 0.5 ;
-  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 1rem;
+  @include logotipo-animado();
 }
 
-.logotipo-estilo:hover{
+.logotipo-estilo:hover {
   opacity: 1;
 }
 
@@ -33,30 +39,70 @@
   
 }
 
-  /* .menu-navegacion ul {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 1rem;
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.menu-navegacion ul li a {
-  text-decoration: none;
-  color: rgb(3, 0, 0);
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
+//    .menu-navegacion ul {
+//   display: flex;
+//   gap: 1rem;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   list-style: none;
+//   padding: 1rem;
+// }
 
-.menu-navegacion ul li a:hover {
-  color: #0044ff; 
-}  */
+// .menu-navegacion ul li a {
+//   text-decoration: none;
+//   color: rgb(3, 0, 0);
+//   font-weight: bold;
+//   transition: color 0.3s ease;
+// }
+
+// .menu-navegacion ul li a:hover {
+//   color: #0044ff; 
+// }  
 
 .index-header button {
  @extend %index-header-paginas;
 }
 
-.index-header   button:hover {
-  background-color: #13120d2c;
+.index-header button:hover {
+  background-color:$backgroundColorcompra;
 } 
+
+#consejos {
+  padding: 50px 20px;
+  background-color: $backgroundColorvarios;
+  text-align: center;
+}
+
+#consejos h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: $color;
+}
+
+.tips-vestimenta {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.tips-vestimenta li {
+  background-color: #f3f3f3;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 6px solid #ff5e5e;
+  border-radius: 5px;
+  color: $color;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
