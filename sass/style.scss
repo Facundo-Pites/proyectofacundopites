@@ -1,0 +1,28 @@
+@import  "../sass/utilities/mixins";
+@import "./utilities/extends";
+@import "./utilities/variables";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Acme', sans-serif;
+  
+}
+
+
+
+
+
+
+
+
+
+
+

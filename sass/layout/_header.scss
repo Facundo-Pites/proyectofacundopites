@@ -1,0 +1,108 @@
+/* Header */
+.index-header, .index-header-zapatillas{
+  background-image: url(../img/botin-haland-2.webp);
+  @extend %paginas;
+ 
+}
+
+.index-header-remeras{
+  background-image: url(../img/jugadores-fondo-remeras.jpeg);
+ @extend %paginas;
+ 
+}
+
+header {
+  @include fondo-animado;
+  color: white;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+.logotipo-estilo {
+  @include logotipo-animado();
+}
+
+.logotipo-estilo:hover {
+  opacity: 1;
+}
+
+.navbar .nav-link:hover {
+  color: #ff6600; 
+  
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//    .menu-navegacion ul {
+//   display: flex;
+//   gap: 1rem;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   list-style: none;
+//   padding: 1rem;
+// }
+
+// .menu-navegacion ul li a {
+//   text-decoration: none;
+//   color: rgb(3, 0, 0);
+//   font-weight: bold;
+//   transition: color 0.3s ease;
+// }
+
+// .menu-navegacion ul li a:hover {
+//   color: #0044ff; 
+// }  
+
+.index-header button {
+ @extend %index-header-paginas;
+}
+
+.index-header button:hover {
+  background-color:$backgroundColorcompra;
+} 
+
+#consejos {
+  padding: 50px 20px;
+  background-color: $backgroundColorvarios;
+  text-align: center;
+}
+
+#consejos h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: $color;
+}
+
+.tips-vestimenta {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.tips-vestimenta li {
+  background-color: #f3f3f3;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 6px solid #ff5e5e;
+  border-radius: 5px;
+  color: $color;
+  font-size: 1.1em;
+  line-height: 1.5;
+}

@@ -1,0 +1,131 @@
+/* Productos y estilos main*/
+
+.centrado {
+  text-align: center;
+}
+
+main {
+  padding-top: 70px; 
+}
+
+
+
+
+.contenedor {
+  padding: 2rem;
+  @include flex-wrap-gap();
+}
+
+.menu-compra {
+  width: 250px;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  @include tarjeta-contenido();
+}
+
+.menu-compra:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.menu-compra img {
+  width: 100%;
+  height: auto;
+  margin: 0
+}
+
+.menu-compra h3 {
+  margin: 0.5rem 0;
+}
+
+.menu-compra button {
+  margin-top: 0.5rem;
+  @include boton-estilo();
+}
+
+.menu-compra button:hover {
+  background-color: $backgroundColorcompra;
+}
+
+.carousel-remeras {
+  width: 100%;            
+  height: 60vh;           
+  object-fit: contain;      
+  background-color:$backgroundColorcompra;
+  
+ 
+}
+
+
+/* Comentarios */
+#comentarios {
+  text-align: center;
+  padding: 2rem;
+}
+
+#mensaje {
+  width: 80%;
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-top: 1rem;
+}
+/* Main del preguntas clientes*/
+
+#testimonios {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contenedor-flex {
+  margin-top: 20px;
+  @include flex-wrap-gap(20px, space-between);
+}
+
+.testimonial {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: left;
+  @include tarjeta-contenido();
+  padding: 20px;
+}
+
+#nosotros {
+  background-color: #fafafa;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+#ubicacion {
+  padding: 60px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#ubicacion h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#ubicacion p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.mapa {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
