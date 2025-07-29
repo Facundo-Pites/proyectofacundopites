@@ -10,7 +10,7 @@
   opacity: $opacidad;
   transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 1rem;
-  animation: girar 6s linear infinite;
+  
 }
 
 @mixin tarjeta-contenido($bg: white, $sombra: rgba(0, 0, 0, 0.1)) {
