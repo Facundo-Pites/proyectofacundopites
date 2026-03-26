@@ -1,4 +1,4 @@
-// 🔥 Traer carrito
+//  Traer carrito
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 //  Agregar producto
@@ -55,7 +55,7 @@ function mostrarCarrito() {
   totalHTML.innerText = "Total: $" + total;
 }
 
-// 🧹 Vaciar carrito
+//  Vaciar carrito
 function vaciarCarrito() {
   Swal.fire({
     title: "¿Vaciar carrito?",
@@ -81,7 +81,7 @@ function vaciarCarrito() {
   });
 }
 
-// 🔢 Contador
+//  Contador
 function actualizarContador() {
   const contador = document.getElementById("contador-carrito");
   if (!contador) return;
@@ -89,7 +89,7 @@ function actualizarContador() {
   contador.innerText = carrito.length;
 }
 
-// ❌ Eliminar producto (con feedback)
+//  Eliminar producto 
 function eliminarProducto(index) {
   carrito.splice(index, 1);
 
@@ -184,7 +184,7 @@ async function cargarProductos() {
   }
 }
 
-// Init
+
 cargarProductos();
 mostrarCarrito();
 actualizarContador();
