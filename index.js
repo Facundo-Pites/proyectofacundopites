@@ -155,7 +155,7 @@ async function cargarProductos() {
   contenedor.innerHTML = "Cargando productos...";
 
   try {
-    const res = await fetch('/productos.json');
+    const res = await fetch('./productos.json');
     const productos = await res.json();
 
     contenedor.innerHTML = "";
