@@ -48,6 +48,17 @@
         
         
       </ul>
+
+      <a href="../paginas/carrito.html" class="nav-link position-relative">
+  <img src="../img/carrito.jpg.png" alt="Carrito" style="width: 30px;">
+
+  <span id="contador-carrito"
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    0
+  </span>
+</a>
+
+
     </div>
   </div>
 </nav>
@@ -64,68 +75,81 @@
       <!-- Producto 1 -->
       <div class="menu-compra">
         <img src="../img/zapatillas-entrenar/juniper.webp" alt="Zapatillas Jupiter">
-        <div>
-         <h3>ZAPATILLA JUPITER</h3>
-         <p>Zapatillas para entrenamiento Hombre</p>
-         <p>$240.000</p>
-        </div>
-        <button type="button">Agregar</button>
+       <div> 
+        <h3>ZAPATILLA JUPITER</h3>
+        <p>Zapatillas para entrenamiento Hombre</p>
+        <p>$240.000</p>
+      </div>
+         <button onclick="agregarAlCarrito('Zapatillas Jupiter', 240000, '../img/zapatillas-entrenar/juniper.webp')">
+          Agregar
+          </button>
       </div>
 
       <!-- Producto 2 -->
       <div class="menu-compra">
         <img src="../img/zapatillas-entrenar/zegama.webp" alt="Zapatillas Zagama">
-        <div>
-          <h3>ZAPATILLAS ZAGAMA</h3>
-          <p>Zapatillas para entrenamiento Hombre</p>
-          <p>$280.000</p>
-        </div>
-        <button type="button">Agregar</button>
+        <h3>ZAPATILLAS ZAGAMA</h3>
+        <p>Zapatillas para entrenamiento Hombre</p>
+        <p>$280.000</p>
+         
+           <button onclick="agregarAlCarrito('Zapatillas Zagama', 280000, '../img/zapatillas-entrenar/zegama.webp')">
+           Agregar
+           </button>
       </div>
 
       <!-- Producto 3 -->
       <div class="menu-compra">
-        <img src="../img/zapatillas-entrenar/nick-pegasus.webp" alt="Zapatillas pegasus">
+        <img src="../img/botines/gx-elite.webp" alt="Botines GX-ELITE">
         <div>
-          <h3>ZAPATILLAS PEGASUS</h3>
-          <p>Zapatillas para entrenamiento Hombre</p>
-          <p>$200.000</p>
+          <h3>BOTINES GX-ELITE</h3>
+          <p>Botines fútbol Unisex</p>
+          <p>$280.000</p>
         </div>
-        <button type="button">Agregar</button>
+         <button onclick="agregarAlCarrito('Botines GX-ELITE', 280000, '../img/botines/gx-elite.webp')">
+          Agregar
+         </button>
       </div>
 
       <!-- Producto 4 -->
       <div class="menu-compra">
-        <img src="../img/zapatillas-entrenar/Zapatillas-air-max-alpha-entrenar.webp" alt="Botines MERCURIAL-VAPOR">
-        <div>
-          <h3>ZAPATILLAS MAX ALPHA</h3>
-          <p>Zapatillas para entrenamiento Hombre</p>
-          <p>$200.000</p>
+        <img src="../img/botines/mercurial-vapor.webp" alt="Botines MERCURIAL-VAPOR">
+       <div>
+        <h3>BOTINES MERCURIAL-VAPOR</h3>
+        <p>Botines fútbol Unisex</p>
+        <p>$200.000</p>
         </div>
-        <button type="button">Agregar</button>
+         <button onclick="agregarAlCarrito('Botines Mercurial-VAPOR', 200000, '../img/botines/mercurial-vapor.webp')">
+          Agregar
+         </button>
       </div>
 
       <!-- Producto 5 -->
       <div class="menu-compra">
-        <img src="../img/zapatillas-entrenar/Zapatillas-free-2025-entrenar.webp" alt="Zapatillas Free">
+        <img src="../img/botines/mercurial.webp" alt="Botines MERCURIAL">
         <div>
-          <h3>ZAPATILLAS FREE 2025</h3>
-          <p>Zapatillas para entrenamiento Hombre</p>
-          <p>$200.000</p>
+         <h3>BOTINES MERCURIAL</h3>
+         <p>Botines fútbol Unisex</p>
+         <p>$200.000</p>
         </div>
-        <button type="button">Agregar</button>
+        <button onclick="agregarAlCarrito('Botines Mercurial', 200000, '../img/botines/mercurial.webp')">
+        Agregar
+        </button>
       </div>
 
       <!-- Producto 6 -->
       <div class="menu-compra">
-        <img src="../img/zapatillas-entrenar/Zapatillas-free-metcon6-entrenar.webp" alt="Zapatillas Metcon">
-        <div> 
-          <h3>ZAPATILLAS METCON 6</h3>
-          <p>Zapatillas para entrenamiento Hombre</p>
-          <p>$200.000</p>
-        </div>
-        <button type="button">Agregar</button>
+        <img src="../img/zapatillas-entrenar/nick-pegasus.webp" alt="Zapatillas PEGASUS">
+       <div><h3>ZAPATILLAS PEGASUS</h3>
+        <p>Botines fútbol Unisex</p>
+        <p>$200.000</p>
+       </div>
+        <button onclick="agregarAlCarrito('Zapatillas Pegasus', 200000, '../img/zapatillas-entrenar/nick-pegasus.webp')">
+        Agregar
+       </button>
       </div>
+
+      
+    
 
       
 
@@ -275,6 +299,13 @@
 </footer>
 
 
+<!-- SweetAlert2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
        
  
 
@@ -282,6 +313,8 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <script src="../index.js"></script>
 
 </body>
 </html>
