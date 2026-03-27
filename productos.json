@@ -30,3 +30,36 @@
     "imagen": "img/zapatillas-entrenar/nick-pegasus.webp"
   }
 ]
+
+[
+  {
+    "nombre": "Remera KOBE",
+    "precio": 150000,
+    "imagen": "img/remeras-entrenamiento/remera-basquet-hombre-kobe.webp" 
+  },
+  {
+    "nombre": "Remera manga larga STRIDE",
+    "precio": 150000,
+    "imagen": "/img/remeras-entrenamiento/remera-hombre-mangalarga-nike-stride.webp"
+  },
+  {
+    "nombre": "Remera entrenamiento BOSTON",
+    "precio": 150000,
+    "imagen": "/img/remeras-entrenamiento/mangacorta-boston-basquet.webp"
+  },
+  {
+    "nombre": "Remera Sportswear PREMIUM",
+    "precio": 100000,
+    "imagen": "/img/remeras-moda-hombre/remera-hombre-sportswear-premium.png"
+  },
+  {
+    "nombre": "Remera JORDAN BRAND",
+    "precio": 100000,
+    "imagen": "/img/remeras-moda-hombre/remera-jordan-brand.webp" 
+  },
+  {
+    "nombre": "Remera Nike SB",
+    "precio": 100000,
+    "imagen": "/img/remeras-moda-hombre/remera-nicke-sb.webp"
+  }
+]
