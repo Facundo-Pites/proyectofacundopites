@@ -4,7 +4,7 @@ async function cargarProductos() {
 
     try {
         // Ajusto la ruta para que funcione desde /paginas/productos.html
-        const res = await fetch('./productos.json');
+        const res = await fetch('../productos.json');
         const productos = await res.json();
 
         contenedor.innerHTML = "";
