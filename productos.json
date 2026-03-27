@@ -40,26 +40,26 @@
   {
     "nombre": "Remera manga larga STRIDE",
     "precio": 150000,
-    "imagen": "/img/remeras-entrenamiento/remera-hombre-mangalarga-nike-stride.webp"
+    "imagen": "img/remeras-entrenamiento/remera-hombre-mangalarga-nike-stride.webp"
   },
   {
     "nombre": "Remera entrenamiento BOSTON",
     "precio": 150000,
-    "imagen": "/img/remeras-entrenamiento/mangacorta-boston-basquet.webp"
+    "imagen": "img/remeras-entrenamiento/mangacorta-boston-basquet.webp"
   },
   {
     "nombre": "Remera Sportswear PREMIUM",
     "precio": 100000,
-    "imagen": "/img/remeras-moda-hombre/remera-hombre-sportswear-premium.png"
+    "imagen": "img/remeras-moda-hombre/remera-hombre-sportswear-premium.png"
   },
   {
     "nombre": "Remera JORDAN BRAND",
     "precio": 100000,
-    "imagen": "/img/remeras-moda-hombre/remera-jordan-brand.webp" 
+    "imagen": "img/remeras-moda-hombre/remera-jordan-brand.webp" 
   },
   {
     "nombre": "Remera Nike SB",
     "precio": 100000,
-    "imagen": "/img/remeras-moda-hombre/remera-nicke-sb.webp"
+    "imagen": "img/remeras-moda-hombre/remera-nicke-sb.webp"
   }
 ]
