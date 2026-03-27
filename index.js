@@ -163,7 +163,7 @@ async function cargarProductos() {
     productos.forEach((producto) => {
       contenedor.innerHTML += `
         <div class="menu-compra">
-          <img src="${producto.imagen}" alt="${producto.nombre}">
+          <img src="../${producto.imagen}" alt="${producto.nombre}">
           <h3>${producto.nombre}</h3>
           <p>$${producto.precio}</p>
           <button onclick="agregarAlCarrito(\`${producto.nombre}\`, ${producto.precio}, \`${producto.imagen}\`)">

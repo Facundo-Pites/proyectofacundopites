@@ -2,31 +2,31 @@
   {
     "nombre": "Zapatillas Jupiter",
     "precio": 240000,
-    "imagen": "/img/zapatillas-entrenar/juniper.webp"
+    "imagen": "img/zapatillas-entrenar/juniper.webp"
   },
   {
     "nombre": "Zapatillas Zagama",
     "precio": 280000,
-    "imagen": "/img/zapatillas-entrenar/zegama.webp"
+    "imagen": "img/zapatillas-entrenar/zegama.webp"
   },
   {
     "nombre": "Botines GX-ELITE",
     "precio": 280000,
-    "imagen": "/img/botines/gx-elite.webp"
+    "imagen": "img/botines/gx-elite.webp"
   },
   {
     "nombre": "Botines Mercurial-VAPOR",
     "precio": 200000,
-    "imagen": "/img/botines/mercurial-vapor.webp"
+    "imagen": "img/botines/mercurial-vapor.webp"
   },
   {
     "nombre": "Botines Mercurial",
     "precio": 200000,
-    "imagen": "/img/botines/mercurial.webp"
+    "imagen": "img/botines/mercurial.webp"
   },
   {
     "nombre": "Zapatillas Pegasus",
     "precio": 200000,
-    "imagen": "/img/zapatillas-entrenar/nick-pegasus.webp"
+    "imagen": "img/zapatillas-entrenar/nick-pegasus.webp"
   }
 ]
